@@ -3,7 +3,7 @@
 ![Screenshot](design/desktop-preview.jpg)
 
 # Live Demo
-Click here to see the live demo of the Social Media Dashboard.
+Click [here](https://social-media-dashboard-sabina.netlify.app/) to see the live demo of the Social Media Dashboard.
 
 # Features
 - Dark and light theme switcher
