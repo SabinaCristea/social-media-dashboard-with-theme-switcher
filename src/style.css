@@ -1,0 +1,347 @@
+/* GENERAL STYLES */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  color: #fff;
+  background-color: #1d1f29;
+  overflow-x: hidden;
+}
+
+/* HEADER STYLES */
+.header {
+  max-width: 100%;
+  background-color: #20222f;
+  height: 24.4rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.header-elements {
+  width: 111rem;
+  padding-top: 3.6rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 3.4rem;
+}
+
+.total-followers,
+.dark-mode-text {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.7rem;
+  padding-top: 0.3rem;
+  color: #8c98c6;
+}
+
+.dark-mode-text {
+  padding-top: 0;
+}
+
+.theme-switch-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.3rem;
+  align-items: center;
+}
+
+/* switcher */
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 4.8rem;
+  height: 2.4rem;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background-color: #ccc; */
+  background-image: linear-gradient(45deg, #388fe7, #40db82);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.8rem;
+  width: 1.8rem;
+  left: 0.35rem;
+  bottom: 0.27rem;
+  background-color: #252b42;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-image: linear-gradient(45deg, #aeb3cb, #aeb3cb);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  background-color: #f1f3fa;
+  -webkit-transform: translateX(2.3rem);
+  -ms-transform: translateX(2.3rem);
+  transform: translateX(2.3rem);
+}
+
+/* Change the color to #333a55 on hover */
+input:hover + .slider:before {
+  background-color: #333a55;
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 3.4rem;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/* changing colors when cheched to the right and hovered */
+.switch input:checked:hover + .slider {
+  background-image: linear-gradient(45deg, #388fe7, #40db82);
+}
+
+.switch input:checked:hover + .slider:before {
+  background-color: #f1f3fa;
+}
+
+/* FOLLOWER SECTION */
+main {
+  max-width: 111rem;
+  margin: -10.8rem auto auto auto;
+}
+
+.number-of-followers-section,
+.overview-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 3rem;
+  /* align-items: center; */
+  text-align: center;
+}
+
+.followers-card {
+  width: 25.5rem;
+  height: 21.6rem;
+
+  background-color: #252b42;
+  border-radius: 0.5rem;
+
+  position: relative;
+}
+
+.followers-card:hover {
+  cursor: pointer;
+  background-color: #333a55;
+}
+
+.facebook-line {
+  border-top: 0.5rem solid #178ff5;
+}
+
+.twitter-line {
+  border-top: 0.5rem solid #1da1f2;
+}
+
+.instagram-line:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0.45rem;
+  background-image: linear-gradient(
+    to left,
+    #df4896,
+    #e6538e,
+    #ea5f87,
+    #ed6b82,
+    #ee777f,
+    #f3807b,
+    #f68a78,
+    #f89476,
+    #fd9f71,
+    #ffaa6c,
+    #ffb668,
+    #fdc366
+  );
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.youtube-line {
+  border-top: 0.5rem solid #c4032b;
+}
+
+/* FOLLOWERS CARD */
+.username-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+
+  margin-top: 3.2rem;
+}
+
+.insta {
+  margin-top: 3.65rem;
+}
+
+.username-text {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  color: #8c98c6;
+}
+
+.followers-number {
+  margin-top: 2.8rem;
+  font-weight: 700;
+  font-size: 5.6rem;
+  line-height: 4.8rem;
+}
+
+.followers-text {
+  margin-top: 0.9rem;
+  color: #8c98c6;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.5rem;
+}
+
+.followers-today {
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2.4rem;
+}
+
+.followers-today p {
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+
+.green-text {
+  color: #1eb589;
+}
+
+.red-text {
+  color: #dc414c;
+}
+
+/* OVERVIEW */
+
+.overview-today {
+  font-size: 2.4rem;
+  margin-top: 4.6rem;
+  margin-bottom: 2.4rem;
+  line-height: 2.9rem;
+}
+
+.overview-section {
+  row-gap: 2.4rem;
+}
+
+.grid-card {
+  background-color: #252b42;
+  height: 12.5rem;
+  padding: 2.6rem 3.1rem 2.4rem 2.4rem;
+  border-radius: 0.5rem;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.description-text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #8c98c6;
+}
+
+.media-icon {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.number {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+
+  font-weight: 700;
+  font-size: 3.2rem;
+
+  color: #ffffff;
+}
+
+.percentage {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+
+  text-align: right;
+}
+
+.grid-card:hover {
+  cursor: pointer;
+  background-color: #333a55;
+}
+
+.attribution {
+  font-size: 11px;
+  position: absolute;
+  bottom: 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

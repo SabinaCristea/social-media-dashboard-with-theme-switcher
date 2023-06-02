@@ -1,0 +1,62 @@
+@media (max-width: 37.5em) {
+  .header {
+    height: 23.5rem;
+  }
+
+  .header-elements {
+    max-width: 32.6rem;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .title-and-followers-section {
+    padding-bottom: 2.4rem;
+  }
+
+  .main-title {
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+  }
+
+  .total-followers,
+  .dark-mode-text {
+    padding-top: 0.4rem;
+  }
+
+  .theme-switch-section {
+    padding-top: 1.5rem;
+    border-top: 1px solid #333a55;
+    gap: 20.3rem;
+  }
+
+  main {
+    margin: -4.4rem auto 4.5rem auto;
+  }
+
+  .number-of-followers-section {
+    grid-template-columns: 1fr;
+    row-gap: 2.4rem;
+    justify-items: center;
+  }
+
+  .followers-card,
+  .grid-card,
+  .overview-today {
+    width: 32.6rem;
+  }
+
+  .overview-section {
+    grid-template-columns: 1fr;
+    row-gap: 1.6rem;
+  }
+
+  .overview-container {
+    max-width: 100%;
+    display: grid;
+    justify-items: center;
+  }
+
+  .attribution {
+    display: none;
+  }
+}
