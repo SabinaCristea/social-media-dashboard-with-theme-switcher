@@ -1,3 +1,22 @@
+@media (max-width: 70em) {
+  .header-elements {
+    max-width: 90rem;
+  }
+
+  .number-of-followers-section,
+  .overview-section {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2.4rem;
+    justify-items: center;
+  }
+
+  .followers-card,
+  .grid-card,
+  .overview-today {
+    width: 32.6rem;
+  }
+}
+
 @media (max-width: 37.5em) {
   .header {
     height: 23.5rem;
